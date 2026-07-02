@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn7"
+        style="@style/CalculatorButton"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/btn8"
+        style="@style/CalculatorButton"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/btn9"
+        style="@style/CalculatorButton"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/btn_div"
+        style="@style/CalculatorButton.Operator"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/btn4"
+        style="@style/CalculatorButton"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btn5"
+        style="@style/CalculatorButton"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btn6"
+        style="@style/CalculatorButton"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/btn_mul"
+        style="@style/CalculatorButton.Operator"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/CalculatorButton"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/CalculatorButton"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/CalculatorButton"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        style="@style/CalculatorButton.Operator"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btn_c"
+        style="@style/CalculatorButton.Operator"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/btn0"
+        style="@style/CalculatorButton"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btn_equal"
+        style="@style/CalculatorButton.Operator"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/CalculatorButton.Operator"
+        android:text="+" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_numpad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:constraint_referenced_ids="btn7,btn8,btn9,btn_div,btn4,btn5,btn6,btn_mul,btn1,btn2,btn3,btn_sub,btn_c,btn0,btn_equal,btn_add"
+        app:flow_horizontalGap="8dp"
+        app:flow_maxElementsWrap="4"
+        app:flow_verticalGap="8dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
